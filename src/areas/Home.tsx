@@ -50,7 +50,7 @@ export default function Home() {
 						<ActionToggleButton view={view} setView={setView}/>
 					</div>
 					<div className="col-md-6">
-						<CatBreedSelector breeds={breeds} handleSelectedBreed={setSelectedBreed} />
+						{<CatBreedSelector breeds={breeds} handleSelectedBreed={setSelectedBreed} />}
 					</div>
 				</div>
 				<div className="row">
