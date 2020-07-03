@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8ec381b794f6964dbabeabb130701992",
+    "revision": "14d197ae2e94d901696fd92c2a30c251",
     "url": "/kitty-meow/index.html"
   },
   {
-    "revision": "151f00c2b69480bcab0c",
+    "revision": "21bde70a0c8184188d3e",
     "url": "/kitty-meow/static/css/main.27ed47ea.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kitty-meow/static/js/2.f9981bca.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "151f00c2b69480bcab0c",
-    "url": "/kitty-meow/static/js/main.a76e76c2.chunk.js"
+    "revision": "21bde70a0c8184188d3e",
+    "url": "/kitty-meow/static/js/main.afb2b89f.chunk.js"
   },
   {
     "revision": "78d2be3f631a6a064a47",
