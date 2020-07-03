@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/kitty-meow/static/css/main.27ed47ea.chunk.css",
+    "main.js": "/kitty-meow/static/js/main.a4735d7e.chunk.js",
+    "main.js.map": "/kitty-meow/static/js/main.a4735d7e.chunk.js.map",
+    "runtime-main.js": "/kitty-meow/static/js/runtime-main.ecf9bf17.js",
+    "runtime-main.js.map": "/kitty-meow/static/js/runtime-main.ecf9bf17.js.map",
+    "static/js/2.8f226866.chunk.js": "/kitty-meow/static/js/2.8f226866.chunk.js",
+    "static/js/2.8f226866.chunk.js.map": "/kitty-meow/static/js/2.8f226866.chunk.js.map",
+    "index.html": "/kitty-meow/index.html",
+    "precache-manifest.e1066e387cdb8d0687bf843330db8a07.js": "/kitty-meow/precache-manifest.e1066e387cdb8d0687bf843330db8a07.js",
+    "service-worker.js": "/kitty-meow/service-worker.js",
+    "static/css/main.27ed47ea.chunk.css.map": "/kitty-meow/static/css/main.27ed47ea.chunk.css.map",
+    "static/js/2.8f226866.chunk.js.LICENSE.txt": "/kitty-meow/static/js/2.8f226866.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ecf9bf17.js",
+    "static/js/2.8f226866.chunk.js",
+    "static/css/main.27ed47ea.chunk.css",
+    "static/js/main.a4735d7e.chunk.js"
+  ]
+}
