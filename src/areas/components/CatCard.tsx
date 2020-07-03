@@ -1,6 +1,7 @@
 import React, { useState, SetStateAction, Dispatch } from 'react';
 import { Card, Button, Spinner } from "react-bootstrap";
 import { Cat } from "../../types";
+import { GenderMapping } from '../constants';
 
 interface CatCardProps {
   setAdopted: Dispatch<SetStateAction<{ id: string, date: string }>>;
@@ -42,7 +43,7 @@ export default function CatCard({cat, setAdopted}: CatCardProps) {
         <hr className="my-1"/>
         <p className="mb-1">Breed: {cat.breed}</p>
         <p className="mb-1">Origin: {cat.origin}</p>
-        <p className="mb-1">Genger: {cat.gender}</p>
+        <p className="mb-1">Genger: {GenderMapping[cat.gender]}</p>
         <p className="mb-1">Body: Height {cat.height} Width {cat.width}</p>
       </Card.Body>
       <Card.Footer>
