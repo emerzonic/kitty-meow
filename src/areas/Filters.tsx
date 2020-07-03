@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Card, ListGroup, Accordion, Button } from 'react-bootstrap';
 import CheckBox from './CheckBox';
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
+import { LikeStringValueObject } from '../types';
 
 export interface FilterProps {
     filterOption: (e: any) => void,
@@ -11,6 +12,10 @@ export interface FilterProps {
 
 export default function Filters(props: FilterProps) {
     const [open, setOpen] = useState(false);
+    const genderMapping = {
+        female:'Female',
+        male:'Male'
+    } as LikeStringValueObject;
     return (
         <Accordion className="my-2">
             <Card>
@@ -28,10 +33,15 @@ export default function Filters(props: FilterProps) {
                         <ListGroup className="border-0">
                             {Object.keys(props.group).sort()
                                 .map((label: string) => {
+                                    let labelText = label;
+                                    const genderFilter = genderMapping[label];
+                                    if (genderFilter) {
+                                        labelText = genderFilter;
+                                    }
                                     const count: number = props.group[label];
                                     return (<CheckBox
-                                        key={label}
-                                        label={label}
+                                        key={labelText}
+                                        label={labelText}
                                         count={count}
                                         filterOption={props.filterOption} />
                                     );
