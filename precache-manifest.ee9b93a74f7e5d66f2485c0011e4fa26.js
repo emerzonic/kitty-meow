@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "89e909a91ba17981a256211a34ed6c2f",
+    "revision": "d77f03d3f333de9529f2ee0aa4fa93cd",
     "url": "/kitty-meow/index.html"
   },
   {
