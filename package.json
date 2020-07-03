@@ -1,8 +1,8 @@
 {
-  "name": "kitty-app",
+  "name": "kitty-meow",
   "version": "0.1.0",
   "private": "false",
-  "homepage": "https://emerzonic.github.io/kitty-app/",
+  "homepage": "https://emerzonic.github.io/kitty-meow/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -30,8 +30,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "predeploy": "npsm run build",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
