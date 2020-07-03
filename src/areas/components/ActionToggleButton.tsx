@@ -10,11 +10,11 @@ export default function ActionToggleButton(props: ActionToggleButtonProps) {
     const handleChange = (val: any) => props.setView(val);
 
     return (
-        <div className="mt-5">
-            <h4 className="text-left h4">What will you like to do?</h4>
-            <ToggleButtonGroup className="text-left" type="radio" name="toggle" value={props.view} onChange={handleChange}>
-                <ToggleButton className="mx-1" name="adopt" value={'adopt'}>Adopt A Cat</ToggleButton>
-                <ToggleButton className="mx-1" name="learn" value={'learn'}>Learn About Cats</ToggleButton>
+        <div>
+            <h4 className="text-left h5 mt-2">What will you like to do?</h4>
+            <ToggleButtonGroup className="w-100" type="radio" name="toggle" value={props.view} onChange={handleChange}>
+                <ToggleButton className="mx-sm-1 ml-md-0" name="adopt" value={'adopt'}>Adopt A Cat</ToggleButton>
+                <ToggleButton className="mx-sm-1 mr-md-0" name="learn" value={'learn'}>Learn About Cats</ToggleButton>
             </ToggleButtonGroup>
         </div>
 

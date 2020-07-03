@@ -14,9 +14,9 @@ export default function CatBreedSelector(props: CatBreedProps) {
 
     return (
         <div> 
-            <Form className="mt-5 text-left">
+            <Form>
                 <Form.Group controlId="exampleForm.ControlSelect1">
-                    <Form.Label className="text-left h4">Cat Breeds</Form.Label>
+                    <Form.Label className="text-left h5 mt-sm-2">Cat Breeds</Form.Label>
                     <Form.Control as="select" onChange={handleSelect} >
                         <option disabled selected hidden>Select cat breed to filter.</option>
                         {props.breeds.map(b => (

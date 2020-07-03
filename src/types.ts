@@ -5,7 +5,10 @@ export interface Cat {
 	height: number;
 	name: string;
 	gender: string;
-	breeds: string;
+	breed: string;
+	origin: string;
+	isAdopted: boolean;
+	adoptedDate:string;
 }
 
 export interface Breed {
@@ -45,3 +48,22 @@ export interface Breed {
 	weight?: { imperial: string };
 	metric?: { imperial: string; metric: string };
 }
+
+export type Filter = {
+	label: string;
+	count: number;
+};
+export type LikeStringValueObject = { 
+	[key: string]: string 
+};
+
+export type LikeNumberValueObject = { 
+	[key: string]: number 
+};
+
+export type LikeNestedObject = { 
+	Breed: LikeNumberValueObject,
+	Gender: LikeNumberValueObject,
+	Origin: LikeNumberValueObject ,
+	'Adoption Status': LikeNumberValueObject ,
+};
