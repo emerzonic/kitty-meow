@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/kitty-meow/static/css/main.27ed47ea.chunk.css",
-    "main.js": "/kitty-meow/static/js/main.afb2b89f.chunk.js",
-    "main.js.map": "/kitty-meow/static/js/main.afb2b89f.chunk.js.map",
+    "main.js": "/kitty-meow/static/js/main.75852fee.chunk.js",
+    "main.js.map": "/kitty-meow/static/js/main.75852fee.chunk.js.map",
     "runtime-main.js": "/kitty-meow/static/js/runtime-main.ecf9bf17.js",
     "runtime-main.js.map": "/kitty-meow/static/js/runtime-main.ecf9bf17.js.map",
-    "static/js/2.f9981bca.chunk.js": "/kitty-meow/static/js/2.f9981bca.chunk.js",
-    "static/js/2.f9981bca.chunk.js.map": "/kitty-meow/static/js/2.f9981bca.chunk.js.map",
+    "static/js/2.14609eaa.chunk.js": "/kitty-meow/static/js/2.14609eaa.chunk.js",
+    "static/js/2.14609eaa.chunk.js.map": "/kitty-meow/static/js/2.14609eaa.chunk.js.map",
     "index.html": "/kitty-meow/index.html",
-    "precache-manifest.2b268ed5414ac78be06e19ebe48b9fbe.js": "/kitty-meow/precache-manifest.2b268ed5414ac78be06e19ebe48b9fbe.js",
+    "precache-manifest.989f86b5370c1b8f0f897c588d4014b0.js": "/kitty-meow/precache-manifest.989f86b5370c1b8f0f897c588d4014b0.js",
     "service-worker.js": "/kitty-meow/service-worker.js",
     "static/css/main.27ed47ea.chunk.css.map": "/kitty-meow/static/css/main.27ed47ea.chunk.css.map",
-    "static/js/2.f9981bca.chunk.js.LICENSE.txt": "/kitty-meow/static/js/2.f9981bca.chunk.js.LICENSE.txt"
+    "static/js/2.14609eaa.chunk.js.LICENSE.txt": "/kitty-meow/static/js/2.14609eaa.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ecf9bf17.js",
-    "static/js/2.f9981bca.chunk.js",
+    "static/js/2.14609eaa.chunk.js",
     "static/css/main.27ed47ea.chunk.css",
-    "static/js/main.afb2b89f.chunk.js"
+    "static/js/main.75852fee.chunk.js"
   ]
 }
