@@ -100,12 +100,12 @@ export default function Home() {
 						<ActionToggleButton view={view} setView={setView} />
 					</div>
 					<div className="col-md-9 mt-md-5 mt-sm-2">
-						{<CatBreedSelector breeds={breeds} handleSelectedBreed={setSelectedBreed} />}
+						{view === "learn" && <CatBreedSelector breeds={breeds} handleSelectedBreed={setSelectedBreed} />}
 					</div>
 				</div>
 				<div className="row">
 					{view === "adopt" && <div className="col-md-3 col-sm-12">
-						<h4 className="p-2 bg-light shadow-sm border">Filters</h4>
+						<h4 className="p-2 mt-2 bg-light shadow-sm border">Filters</h4>
 						<div className="w-100">
 							<Filters filterOption={handleFiltering} group={filters.Breed} title="Breed" />
 							<Filters filterOption={handleFiltering} group={filters.Gender} title="Gender" />

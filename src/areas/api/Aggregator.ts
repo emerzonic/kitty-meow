@@ -1,30 +1,15 @@
 import { LikeNestedObject } from '../../types';
 export default class Aggregator {
     static aggregateBreed(filters: LikeNestedObject, key: string) {
-        if (filters.Breed[key]) {
-            filters.Breed[key]++;
-        }
-        else {
-            filters.Breed[key] = 1;
-        }
+        filters.Breed[key] ? filters.Breed[key]++ : filters.Breed[key] = 1;
     };
 
     static aggregateGender(filters: LikeNestedObject, key: string) {
-        if (filters.Gender[key]) {
-            filters.Gender[key]++;
-        }
-        else {
-            filters.Gender[key] = 1;
-        }
+        filters.Gender[key] ? filters.Gender[key]++ : filters.Gender[key] = 1;
     };
 
     static aggregateOrigin(filters: LikeNestedObject, key: string) {
-        if (filters.Origin[key]) {
-            filters.Origin[key]++;
-        }
-        else {
-            filters.Origin[key] = 1;
-        }
+        filters.Origin[key] ? filters.Origin[key]++ :filters.Origin[key] = 1;
     }
 
     static aggregateAdoption(filters: LikeNestedObject, isAdopted: boolean) {

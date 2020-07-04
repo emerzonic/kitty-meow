@@ -13,8 +13,8 @@ export default function ActionToggleButton(props: ActionToggleButtonProps) {
         <div>
             <h4 className="text-left h5 mt-2">What will you like to do?</h4>
             <ToggleButtonGroup className="w-100" type="radio" name="toggle" value={props.view} onChange={handleChange}>
-                <ToggleButton className="mx-sm-1 ml-md-0" name="adopt" value={'adopt'}>Adopt A Cat</ToggleButton>
-                <ToggleButton className="mx-sm-1 mr-md-0" name="learn" value={'learn'}>Learn About Cats</ToggleButton>
+                <ToggleButton className="mx-sm-1 ml-md-0" name="adopt" value={'adopt'}>Adopt</ToggleButton>
+                <ToggleButton className="mx-sm-1 mr-md-0" name="learn" value={'learn'}>Learn</ToggleButton>
             </ToggleButtonGroup>
         </div>
 

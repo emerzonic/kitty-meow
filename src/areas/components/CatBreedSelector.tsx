@@ -7,25 +7,25 @@ interface CatBreedProps {
     handleSelectedBreed: Dispatch<SetStateAction<string>>
 }
 export default function CatBreedSelector(props: CatBreedProps) {
-    
+
     const handleSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
         props.handleSelectedBreed(e.target.value);
     };
 
     return (
-        <div> 
+        <div>
             <Form>
                 <Form.Group controlId="exampleForm.ControlSelect1">
                     <Form.Label className="text-left h5 mt-sm-2">Cat Breeds</Form.Label>
                     <Form.Control as="select" onChange={handleSelect} >
-                        <option disabled selected hidden>Select a breed...</option>
+                        <option hidden value="Select a breed...">Select a breed...</option>
                         {props.breeds.map(b => (
-                        <option 
-                            key={b.id} 
-                            value={b.name}
-                        >
-                            {b.name}
-                        </option>
+                            <option
+                                key={b.id}
+                                value={b.name}
+                            >
+                                {b.name}
+                            </option>
                         ))
                         }
                     </Form.Control>

@@ -2,6 +2,7 @@ import axios from 'axios';
 import { Breed, Cat, LikeStringValueObject } from '../../types';
 import Faker from 'faker';
 import Aggregator  from './Aggregator';
+import { GenderMapping } from '../constants';
 axios.defaults.headers['x-api-key'] = 'ccef54e7-98da-4c95-810d-47f3079fe24a';
 
 export async function getCats() {
@@ -76,8 +77,6 @@ export async function getCatBreeds() {
 	}
 }
 export async function getCatBreedDetail(breedName: string) {
-    console.log('getCatBreedDetail')
-
 	try {
         const breeds: Breed[] = getDataFromLocalStorageByKey('cat-breeds-details');
         const breedDetail = breeds.find(b => b.name === breedName);
@@ -96,7 +95,7 @@ export function filterCats(values: string[]) {
         const cats: Cat[] = getDataFromLocalStorageByKey('cat-list');
         const filteredCats = cats.filter(cat => {
             const matched = values.includes(cat.breed) ||
-                            values.includes(cat.gender) ||
+                            values.includes(GenderMapping[cat.gender]) ||
                             values.includes(cat.origin) ||
                             (values.includes('Adopted') && cat.isAdopted) ||
                             (values.includes('Not Adopted') && !cat.isAdopted);
@@ -107,7 +106,6 @@ export function filterCats(values: string[]) {
 }
 
 export function addAdoptedCat(adopted: {date:string, id:string}) {
-    console.log('addAdoptedCats')
         const cats: Cat[] = getDataFromLocalStorageByKey('cat-list');
         const updatedCats = cats.map(cat=>{
             if (cat.id === adopted.id) {

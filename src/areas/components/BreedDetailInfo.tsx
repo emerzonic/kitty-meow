@@ -1,11 +1,12 @@
 import React from 'react';
 import {Card } from "react-bootstrap";
 import { Breed } from '../../types';
+import ExternalLinks from './ExternalLinks';
 
 export default function BreedDetailInfo(props:Breed) {
     return (
         <Card className="text-left bg-transparent shadow-sm">
-        <Card.Body>
+        <Card.Body className="mt-sm-4">
             <Card.Title>{props.origin}</Card.Title>
             <Card.Subtitle className="mb-2 text-muted">Origin</Card.Subtitle>
             <Card.Title>{props.life_span} years</Card.Title>
@@ -23,21 +24,5 @@ export default function BreedDetailInfo(props:Breed) {
             <ExternalLinks url={props.wikipedia_url} text="Wikipedia"/>
         </Card.Body>
     </Card>
-    )
-}
-
-function ExternalLinks(props:{url?:string, text:string}) {
-    
-    if (!props.url) {
-        return null;
-    }
-
-    return (
-        <Card.Link 
-            target="_blank" 
-            href={props.url}
-        >
-            {props.text}
-        </Card.Link>
     )
 }

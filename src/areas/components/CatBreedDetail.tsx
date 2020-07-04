@@ -25,7 +25,7 @@ export default function CatBreedDetail(props: Breed) {
                         </div>
                     </div>
                 </>) :
-                (<h3 className="h3">Select a breed from the dropdown</h3>)
+                (<h4 className="h3 text-center">Select a breed from the dropdown</h4>)
             }
         </Jumbotron>
     )
